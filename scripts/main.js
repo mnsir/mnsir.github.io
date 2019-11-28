@@ -1,30 +1,30 @@
-var переменная = document.querySelector('img');
+var _pic = document.querySelector('img');
 
-переменная.onclick = function () {
-    var atr = переменная.getAttribute('src');
+_pic.onclick = function () {
+    var atr = _pic.getAttribute('src');
     if (atr === 'images/pic.png') {
-        переменная.setAttribute('src', 'images/pic2.jpg');
+        _pic.setAttribute('src', 'images/pic2.jpg');
     } else {
-        переменная.setAttribute('src', 'images/pic.png');
+        _pic.setAttribute('src', 'images/pic.png');
     }
 };
 
-var заголовок = document.querySelector('h1');
-var кнопка = document.querySelector('button');
+var _h1 = document.querySelector('h1');
+var _button = document.querySelector('button');
 
 if (!localStorage.getItem('name')) {
     setUserName();
 } else {
-    var имя = localStorage.getItem('name');
-    заголовок.textContent = 'Внимание, ' + имя + '!';
+    var _name = localStorage.getItem('name');
+    _h1.textContent = 'Р’РЅРёРјР°РЅРёРµ, ' + _name + '!';
 }
 
-кнопка.onclick = function () {
+_button.onclick = function () {
     setUserName();
 };
 
 function setUserName() {
-    var имя = prompt('Введите Ваше имя!');
-    localStorage.setItem('name', имя);
-    заголовок.textContent = 'Внимание, ' + имя + '!';
+    var _name = prompt('Р’РІРµРґРёС‚Рµ Р’Р°С€Рµ РёРјСЏ!');
+    localStorage.setItem('name', _name);
+    _h1.textContent = 'Р’РЅРёРјР°РЅРёРµ, ' + _name + '!';
 };
