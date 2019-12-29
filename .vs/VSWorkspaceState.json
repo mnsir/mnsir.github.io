@@ -2,8 +2,14 @@
   "ExpandedNodes": [
     "",
     "\\html",
-    "\\html\\ex1"
+    "\\html\\ex1",
+    "\\html\\images",
+    "\\html\\scripts",
+    "\\html\\styles",
+    "\\images",
+    "\\scripts",
+    "\\styles"
   ],
-  "SelectedNode": "\\html\\ex1\\meta-example.html",
+  "SelectedNode": "\\index.html",
   "PreviewInSolutionExplorer": false
 }
